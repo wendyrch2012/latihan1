@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        a.atas-kotak-blog {
+            display: block;
+            width: 100%;
+            height: 19vh;
+            background-color: purple;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+        a.atas-kotak-blog:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="utama"id="home">
+        <div class="navbar">
+            <div class="dlm-navbar">
+                <div class="kiri-navbar">
+                    <div class="logo">
+                        <div class="bulat">
+
+                        </div>
+                    </div>
+                    <div class="kanan-logo">
+                        <h1>Wendy</h1>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+
+                <div class="kanan-navbar" id="kanan-navbar">
+                    <div class="home">
+                        <a href="#home" onclick="tutupMenu()" style="background-color: purple; padding: 10px; border-radius: 10px;">Home</a>
+                        <a href="#about" onclick="tutupMenu()">About</a>
+                        <a href="#procces" onclick="tutupMenu()">Procces</a>
+                        <a href="#portfolio" onclick="tutupMenu()">Portfolio</a>
+                        <a href="#blog" onclick="tutupMenu()">Blog</a>
+                        <a href="#services" onclick="tutupMenu()">services</a>
+                    </div>
+                    <div class="kanan-home">
+                        <div class="button">
+                            <a href="#contact" onclick="tutupMenu()" style="background-color: purple; padding: 10px; border-radius: 10px;">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tengah">
+            <div class="kiri">
+                <div class="bks-hello">
+                    <div class="atas">
+                        <div class="dlm-atas">
+                            <div class="hello">
+                                <h2>Hello ,Im</h2>
+                            </div>
+                            <div class="hello1">
+                                <h2>Wendy Richardson</h2>
+                            </div>
+                            <div class="lorem">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et quae facere quia enim rem debitis. Earum sed, sunt quo magni a nisi odio suscipit eveniet adipisci officia, tempore dolore.</p>
+                            </div>
+                            <div class="bawah-lorem">
+                                <div class="button-bawah">
+                                    <h3>Say Hello!</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bawah">
+                    <div class="dlm-bawah">
+                        <div class="bks-bawah" >
+                            <div class="kotak-kecil">
+                                <div class="kotak1">
+                                    <div class="atas-kotakkcl">
+                                    <h2>15 Y</h2>
+                                </div>
+                                <div class="bawah-kotakkcl">
+                                    <p>Experience</p>
+                                </div>
+                                </div>
+                                <div class="kotak2">
+                                    <div class="atas-kotakkcl">
+                                    <h2>250 +</h2>
+                                </div>
+                                <div class="bawah-kotakkcl">
+                                    <p>Projects Complited</p>
+                                </div>
+                                </div>
+                                <div class="kotak3">
+                                    <div class="atas-kotakkcl">
+                                    <h2>58 +</h2>
+                                </div>
+                                <div class="bawah-kotakkcl">
+                                    <p>Happy Clients</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanan">
+                <div class="gambar">
+                    <img src="Screenshot 2026-04-06 232220.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="utama1" id="about">
+        <div class="kotak-besar">
+            <div class="kiri-besar">
+                <div class="gambar2">
+                    <img src="Screenshot 2026-04-06 232220.png" alt="">
+                </div>
+            </div>
+            <div class="kanan-besar">
+                <div class="dlm-besar">
+                    <div class="bks-besar">
+                        <div class="iam">
+                            <h1>I am Professional User</h1>
+                        </div>
+                        <div class="exp">
+                            <h1>Experience Designer</h1>
+                        </div>
+                        <div class="lorem2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ut. Quidem, qui minus? Similique sequi ex laborum labore rem! Repellat ducimus ipsum, blanditiis architecto nobis impedit nesciunt? Assumenda laboriosam, inventore nulla ea distinctio dolores? Maxime.</p>
+                        </div>
+                        <div class="lorem3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae dolor laboriosam eos maiores magni error quas, deserunt repudiandae doloribus!</p>
+                        </div>
+                        <div class="button-bawahlorem">
+                            <div class="dlm-buttonlorem">
+                                <div class="button-project">
+                                    <h2>My Projects</h2>
+                                </div>
+                                <div class="button-sebelah">
+                                    <h2>Download CV</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="utama3"id="procces">
+        <div class="kiri-utama3">
+            <div class="bks-work">
+                <div class="work">
+                    <h1>Work Procces</h1>
+                </div>
+                <div class="bawah-work">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt nulla, nobis itaque ab, cupiditate obcaecati voluptate iure omnis amet, error quis perferendis eos perspiciatis rerum. Dignissimos eius ad doloremque magnam recusandae ut quos tempore dolorem error, in, obcaecati tempora.</p>
+                </div>
+                <div class="bawah-work2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente reiciendis assumenda porro quis pariatur eos magni nobis eius ad?</p>
+                </div>
+            </div>
+        </div>
+        <div class="kanan-utama3">
+            <div class="bks-kotak">
+                <div class="kiri-4kotak">
+                    <div class="bks-kotakkecil">
+                        <div class="kotakkecil">
+                            <div class="dlm-kotakkecil">
+                                <div class="logo1">
+                                    <div class="bks-logo1">
+                                        <h3>📅</h3>
+                                    </div>
+                                </div>
+                                <div class="bawah-logo1">
+                                        <h3>1. Research</h3>
+                                    </div>
+                                    <div class="bawah-reseach">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, unde.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bks-kotakkecil1">
+                         <div class="kotakkecil">
+                            <div class="dlm-kotakkecil">
+                                <div class="logo1">
+                                    <div class="bks-logo1">
+                                        <h3>🖋️</h3>
+                                    </div>
+                                </div>
+                                <div class="bawah-logo1">
+                                        <h3>3. Design</h3>
+                                    </div>
+                                    <div class="bawah-reseach">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, unde.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanan-4kotak">
+                    <div class="bks-kotakkecil2">
+                        <div class="kotakkecil">
+                            <div class="dlm-kotakkecil">
+                                <div class="logo1">
+                                    <div class="bks-logo1">
+                                        <h3>💹</h3>
+                                    </div>
+                                </div>
+                                <div class="bawah-logo1">
+                                        <h3>2. Analyze</h3>
+                                    </div>
+                                    <div class="bawah-reseach">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, unde.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bks-kotakkecil3">
+                        <div class="kotakkecil">
+                            <div class="dlm-kotakkecil">
+                                <div class="logo1">
+                                    <div class="bks-logo1">
+                                        <h3>🎩</h3>
+                                    </div>
+                                </div>
+                                <div class="bawah-logo1">
+                                        <h3>4. Launch</h3>
+                                    </div>
+                                    <div class="bawah-reseach">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, unde.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="utama4"id="portfolio">
+        <div class="bagian-atas">
+            <div class="bks-bagian-atas">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="bks-bagian-bawah">
+                <div class="dlm-bks-bagian-bawah">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quo!</p>
+                </div>
+            </div>
+        </div>
+        <div class="bagian-bawah-port">
+            <div class="dlm-bawah-port">
+                <div class="atas-port">
+                    <div class="kotak-port">
+                        <div class="gambar-port" >
+                            <img src="Screenshot 2026-04-06 230214.png" alt="">
+                        </div>
+                        <div class="dlm-kotakport">
+                                <div class="dlm-kotakport1">
+                                    <div class="kode">
+                                        <p>UI-UX- Design</p>
+                                    </div>
+                                    <div class="product">
+                                        <h3>Password generator</h3>
+                                    </div>
+                                    <div class="bwh-product">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed quis</p>
+                                    </div>
+                                    <div class="bwh-loremproduct">
+                                        <div class="dlm-buttonproduct">
+                                            <a href="web..html">Case Study →</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="kotak-port">
+                        <div class="gambar-port">
+                            <img src="Screenshot 2026-04-06 225654.png" alt="">
+                        </div>
+                        <div class="dlm-kotakport">
+                                <div class="dlm-kotakport1">
+                                    <div class="kode">
+                                        <p>UI-UX- Design</p>
+                                    </div>
+                                    <div class="product">
+                                        <h3>Movie shop</h3>
+                                    </div>
+                                    <div class="bwh-product">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed quis</p>
+                                    </div>
+                                    <div class="bwh-loremproduct">
+                                        <div class="dlm-buttonproduct">
+                                            <a href="web1..html">Case Study →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="kotak-port">
+                        <div class="gambar-port">
+                            <img src="Screenshot 2026-04-06 230337.png" alt="">
+                        </div>
+                        <div class="dlm-kotakport">
+                                <div class="dlm-kotakport1">
+                                    <div class="kode">
+                                        <p>UI-UX- Design</p>
+                                    </div>
+                                    <div class="product">
+                                        <h3>Photos</h3>
+                                    </div>
+                                    <div class="bwh-product">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed quis</p>
+                                    </div>
+                                    <div class="bwh-loremproduct">
+                                        <div class="dlm-buttonproduct">
+                                            <a href="web2..html">Case Study →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="bawah-port">
+                    <div class="kotak-port">
+                        <div class="gambar-port">
+                            <img src="Screenshot 2026-04-06 230613.png" alt="">
+                        </div>
+                        <div class="dlm-kotakport">
+                                <div class="dlm-kotakport1">
+                                    <div class="kode">
+                                        <p>UI-UX- Design</p>
+                                    </div>
+                                    <div class="product">
+                                        <h3>Aplikasi Nilai siswa</h3>
+                                    </div>
+                                    <div class="bwh-product">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed quis</p>
+                                    </div>
+                                    <div class="bwh-loremproduct">
+                                        <div class="dlm-buttonproduct">
+                                             <a href="web3..html">Case Study →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="kotak-port">
+                        <div class="gambar-port">
+                            <img src="Screenshot 2026-04-06 231157.png" alt="">
+                        </div>
+                        <div class="dlm-kotakport">
+                                <div class="dlm-kotakport1">
+                                    <div class="kode">
+                                        <p>UI-UX- Design</p>
+                                    </div>
+                                    <div class="product">
+                                        <h3>Aplikasi Pulsa</h3>
+                                    </div>
+                                    <div class="bwh-product">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed quis</p>
+                                    </div>
+                                    <div class="bwh-loremproduct">
+                                        <div class="dlm-buttonproduct">
+                                            <a href="web4..html">Case Study →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="kotak-port">
+                        <div class="gambar-port">
+                            <img src="Screenshot 2026-04-06 231301.png" alt="">
+                        </div>
+                        <div class="dlm-kotakport">
+                                <div class="dlm-kotakport1">
+                                    <div class="kode">
+                                        <p>UI-UX- Design</p>
+                                    </div>
+                                    <div class="product">
+                                        <h3>Drawing</h3>
+                                    </div>
+                                    <div class="bwh-product">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed quis</p>
+                                    </div>
+                                    <div class="bwh-loremproduct">
+                                        <div class="dlm-buttonproduct">
+                                            <a href="web5..html">Case Study →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bawah-semuakotak">
+            <div class="dlm-semuakotak">
+                <p>More Projects →</p>
+            </div>
+        </div>
+    </div>
+    <div class="utama5">
+        <div class="dohave">
+            <div class="dlm-dohave">
+                <h1>Do You have a Project idea? Lets discuss your Project!</h1>
+            </div>
+        </div>
+        <div class="bwh-dohave">
+            <div class="dlm-bwh-dohave">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea atque nobis dolorum magni ipsum illum!</p>
+            </div>
+        </div>
+        <div class="bwh-dohave2">
+            <div class="bks-dohave2">
+                <div class="dlm-dohave2">
+                    <p>Let's work Together →</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="utama6"id="blog">
+        <div class="blog">
+            <div class="dlm-blog">
+                <h1>Blog</h1>
+            </div>
+        </div>
+        <div class="bwh-blog">
+            <div class="dlm-bwh-blog">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellendus recusandae fugit illo quod itaque.</p>
+            </div>
+        </div>
+        <div class="tengah-blog">
+            <div class="dlm-tengahblog">
+                <div class="kotak-blog">
+                   <a href="web6..html" target="_blank" class="atas-kotak-blog">
+                    <img src="Screenshot 2026-04-06 140621.png" alt="Blog 1">
+                     </a>
+                    <div class="bawah-kotak-blog">
+                        <div class="bks-bawah-kotakblog">
+                            <div class="tanggal">
+                                <p>20 oct,2022 / 243 Comments</p>
+                            </div>
+                            <div class="bwh-tanggal">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. . . </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kotak-blog">
+                   <a href="web7..html" target="_blank" class="atas-kotak-blog">
+                    <img src="Screenshot 2026-04-06 202540.png" alt="">
+                   </a>
+                    <div class="bawah-kotak-blog">
+                        <div class="bks-bawah-kotakblog">
+                            <div class="tanggal">
+                                <p>20 oct,2022 / 243 Comments</p>
+                            </div>
+                            <div class="bwh-tanggal">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. . . </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kotak-blog">
+                   <a href="web8..html" target="_blank" class="atas-kotak-blog">
+                    <img src="" alt="">
+                   </a>
+                    <div class="bawah-kotak-blog">
+                        <div class="bks-bawah-kotakblog">
+                            <div class="tanggal">
+                                <p>20 oct,2022 / 243 Comments</p>
+                            </div>
+                            <div class="bwh-tanggal">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. . . </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kotak-blog">
+                   <a href="web9..html" target="_blank" class="atas-kotak-blog">
+                    <img src="Screenshot 2026-04-06 225116.png" alt="">
+                   </a>
+                    <div class="bawah-kotak-blog">
+                        <div class="bks-bawah-kotakblog">
+                            <div class="tanggal">
+                                <p>20 oct,2022 / 243 Comments</p>
+                            </div>
+                            <div class="bwh-tanggal">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. . . </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="utama7">
+        <div class="kirisec7">
+            <div class="dlm-sec7">
+                <div class="bks-sec7">
+                     <div class="whatido">
+                        <h1>What i do?</h1>
+                    </div>
+                    <div class="bwh-whatido">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem nihil ipsum possimus consequatur veritatis quis numquam. Optio possimus consequuntur corporis cum veritatis. Placeat, eius harum! Voluptas hic quia omnis!</p>
+                    </div>
+                    <div class="bwhlagiwhat">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam iure error assumenda odio modi et fugit mollitia, dignissimos, molestiae ipsum tempore labore ducimus totam </p>
+                    </div>
+                    <div class="say-hello">
+                        <div class="button-say-hello">
+                            <p>Say Hello!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kanansec7">
+           <div class="kotakgaris3">
+                <div class="kotak3nya">
+                    <div class="ataskotak3">
+                        <h1>User Experience (UE)</h1>
+                    </div>
+                    <div class="bwhkotak3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quis temporibus, qui explicabo dignissimos rerum quasi laudantium perferendis alias architecto ipsa harum, asperiores ab distinctio cumque id. Officia, illo consequatur.</p>
+                    </div>
+                </div>
+                <div class="kotak3nya">
+                    <div class="ataskotak3">
+                        <h1>User Interface (UI)</h1>
+                    </div>
+                    <div class="bwhkotak3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quis temporibus, qui explicabo dignissimos rerum quasi laudantium perferendis alias architecto ipsa harum, asperiores ab distinctio cumque id. Officia, illo consequatur.</p>
+                    </div>
+                </div>
+                <div class="kotak3nya">
+                    <div class="ataskotak3">
+                        <h1>Web Development</h1>
+                    </div>
+                    <div class="bwhkotak3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quis temporibus, qui explicabo dignissimos rerum quasi laudantium perferendis alias architecto ipsa harum, asperiores ab distinctio cumque id. Officia, illo consequatur.</p>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="utama8"id="services">
+
+    <section class="clients">
+    <h1>Happy Clients</h1>
+    <p class="bwh-happy">
+        I've had the pleasure of working with a diverse range of companies, from startups to established brands.
+    </p>
+
+    <div class="logo-slider">
+        <div class="logo-track">
+            <span>Google</span>
+            <span>Dribbble</span>
+            <span class="bold">Linked<span class="blue">in</span></span>
+            <span>amazon</span>
+            <span>Medium</span>
+            <span>Spotify</span>
+
+            <span>Google</span>
+            <span>Dribbble</span>
+            <span class="bold">Linked<span class="blue">in</span></span>
+            <span>amazon</span>
+            <span>Medium</span>
+            <span>Spotify</span>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial">
+    <h1>Testimonial</h1>
+    <p class="bwh-testi">
+        Working with this team was a fantastic experience. Their attention to detail and commitment to quality exceeded our expectations.
+    </p>
+
+    <p class="quote">
+        “From the initial consultation to the final delivery, every step was handled professionally. The end result was a product that not only met our needs but also impressed our stakeholders. Highly recommended!”
+    </p>
+
+    <h3>Esther Howard</h3>
+    <div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</section>
+</div>
+<section class="contact"id="contact">
+  <div class="container">
+
+    <div class="left">
+      <h2>Let’s discuss your Project</h2>
+      <p>
+        I'm available for freelance work. Drop me a line if you have a project you think I'd be a good fit for.
+      </p>
+
+      <div class="info">
+        <div class="item">
+          <div class="icon">📍</div>
+          <div>
+            <p class="label">Address:</p>
+            <p>New Mexico, 31134</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon">✉️</div>
+          <div>
+            <p class="label">My Email:</p>
+            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6abbfaba7afaa86aba7afaae8a5a9ab">[email&#160;protected]</a></p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon">📞</div>
+          <div>
+            <p class="label">Call Me Now:</p>
+            <p>00-123 00000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social">
+        <span>f</span>
+        <span>🌐</span>
+        <span>📷</span>
+        <span>in</span>
+        <span>Be</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <p class="desc">
+        I'm always open to discussing product design work or partnership opportunities.
+      </p>
+
+      <form>
+        <input type="text" placeholder="Name*" />
+        <input type="email" placeholder="Email*" />
+        <input type="text" placeholder="Location*" />
+
+        <div class="row">
+          <input type="text" placeholder="Budget*" />
+          <input type="text" placeholder="Subject*" />
+        </div>
+
+        <input type="text" placeholder="Message*" />
+
+        <button type="submit">Submit ➤</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="logo3">
+      <div class="circle"></div>
+      <h3>Wendy.</h3>
+    </div>
+
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Process</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Blog</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <p>Copyright © 2026 Picto.</p>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById('kanan-navbar');
+    var btn = document.getElementById('hamburger');
+    if (menu.classList.contains('aktif')) {
+        menu.classList.remove('aktif');
+        btn.innerHTML = '☰';
+    } else {
+        menu.classList.add('aktif');
+        btn.innerHTML = '✕';
+    }
+}
+
+function tutupMenu() {
+    var menu = document.getElementById('kanan-navbar');
+    var btn = document.getElementById('hamburger');
+    menu.classList.remove('aktif');
+    btn.innerHTML = '☰';
+}
+
+function isIPhoneSE() {
+    return /iPhone/.test(navigator.userAgent) && 
+           screen.width === 375 && 
+           screen.height === 667;
+}
+</script>
+
+</body>
+</html>
