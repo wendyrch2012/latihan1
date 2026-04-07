@@ -1,0 +1,1124 @@
+*{
+    scroll-behavior: smooth;
+}
+.utama {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+ 
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(221, 220, 220);
+    position: fixed;
+    margin-top: -10px;
+    position: fixed;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 1px 1px black;
+}
+ 
+.dlm-navbar {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+ 
+.kiri-navbar {
+    width: 50vh;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.kanan-navbar {
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.logo {
+    width: 15vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: -10px ;
+}
+ 
+.bulat {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 40px;
+    background-color: green;
+}
+ 
+.kanan-logo {
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.home {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+ 
+.kanan-home {
+    width: 22%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.button {
+    width: 75%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+ 
+.tengah {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.kiri {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: -90px;
+}
+ 
+.kanan {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -90px;
+}
+.bks-hello{
+    width: 86%;
+    height: 90vh;
+}
+.atas{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.bawah{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: end;
+}
+.hello{
+    width: 100%;
+    height: 7vh;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.hello1{
+    width: 100%;
+    height: 8vh;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+ 
+}
+.dlm-atas{
+    width: 100%;
+    height: 40vh;
+}
+.lorem{
+    width: 100%;
+    height: 10vh;
+}
+.kosong{
+    width: 100%;
+    height: 5vh;
+}
+.bawah-lorem{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: end;
+}
+.button-bawah{
+    width: 20%;
+    height: 6vh;
+    background-color: purple;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-bawah:hover{
+    color: black;
+    background-color: yellow;
+      transition: all 0.3s ease;
+ 
+}
+.gambar{
+    width: 70%;
+    height: 70vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+ 
+.dlm-bawah{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.bks-bawah{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kotak-kecil{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kotak1,.kotak2,.kotak3{
+    width: 31%;
+    
+    background-color: rgb(249, 202, 249);
+ 
+}
+.atas-kotakkcl{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.bawah-kotakkcl{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.utama1{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+ 
+}
+.kotak-besar{
+    width: 80%;
+    height: 80vh;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 3px 3px ;
+}
+.kiri-besar{
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kanan-besar{
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gambar2{
+    width: 70%;
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+ 
+.dlm-besar{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bks-besar{
+    width: 90%;
+    height: 40vh;
+}
+.iam{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+.exp{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+.lorem2{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.lorem3{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: end;
+}
+.button-bawahlorem{
+    width: 100%;
+    height: 10vh;
+    
+}
+.dlm-buttonlorem{
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-project{
+    width: 40%;
+    height: 7vh;
+    background-color: purple;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.button-sebelah{
+    width: 40%;
+    height: 7vh;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.utama3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: aliceblue;
+}
+.bks-work{
+    width: 85%;
+    height: 40vh;
+}
+.kiri-utama3{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.kanan-utama3{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+.bawah-work{
+    width: 100%;
+    height: 15vh;
+    align-items: end;
+    display: flex;
+ 
+}
+.bawah-work2{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: end;
+}
+.bks-kotak{
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kiri-4kotak{
+    width: 50%;
+    height: 60vh;
+}
+.kanan-4kotak{
+    width: 50%;
+    height: 60vh;
+}
+.bks-kotakkecil{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bks-kotakkecil1{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.kotakkecil{
+    width: 90%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+}
+.dlm-kotakkecil{
+    width: 90%;
+    height: 22vh;
+}
+.logo1{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+.bks-logo1{
+    width: 25%;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bawah-logo1{
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+}
+.bawah-reseach{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.bks-kotakkecil2{
+    width: 100%;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bks-kotakkecil3{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.utama4{
+    width: 100%;
+    height: 140vh;
+    background-color: rgb(250, 250, 250);
+}
+.bagian-atas{
+    width: 100%;
+    height: 30vh;
+}
+.bks-bagian-atas{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 25px;
+}
+.bks-bagian-atas h1{
+    margin-bottom: -5px;
+}
+.bks-bagian-bawah{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.dlm-bks-bagian-bawah{
+    width: 20%;
+    height: 10vh;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: end;
+}
+.bagian-bawah-port{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dlm-bawah-port{
+    width: 80%;
+    height: 90vh;
+ 
+}
+.atas-port{
+    width: 100%;
+    height: 42vh;
+     display: flex;
+     justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+}
+.bawah-port{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kotak-port{
+    width: 30%;
+    height: 37vh;
+    border-radius: 10px;
+    border: 2px solid rgb(204, 200, 200);
+ 
+}
+.gambar-port{
+    width: 100%;
+    height: 14vh;
+    background-color: purple;
+}
+.dlm-kotakport{
+    width: 100%;
+    height: 21vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dlm-kotakport1{
+    width: 92%;
+    height: 19vh;
+}
+.kode{
+    width: 100%;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.product{
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+}
+.bwh-product{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+.bwh-loremproduct{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+.dlm-buttonproduct{
+    width: 40%;
+    height: 5vh;
+    border: 2px solid rgb(204, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: -50px;
+}
+.bawah-semuakotak{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.dlm-semuakotak{
+    width: 10%;
+    height: 6vh;
+    color: white;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.utama5{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(37, 36, 36);
+}
+.dohave{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dlm-dohave{
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: -100px;
+    color: white;
+    font-size: 15px;
+    
+}
+.bwh-dohave{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dlm-bwh-dohave{
+    width: 30%;
+    height: 7vh;
+    text-align: center;
+    color: rgb(157, 156, 156);
+}
+.bwh-dohave2{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bks-dohave2{
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.dlm-dohave2{
+    width: 40%;
+    height: 5vh;
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.utama6{
+    width: 100%;
+    height: 100vh;
+}
+.blog{
+    width: 100%;
+    height: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 25px;
+}
+.bwh-blog{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dlm-bwh-blog{
+    width: 30%;
+    height: 10vh;
+    text-align: center;
+}
+.dlm-blog{
+    width: 30%;
+    height: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.tengah-blog{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dlm-tengahblog{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+}
+.kotak-blog{
+    width: 23%;
+    height: 35vh;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.atas-kotak-blog{
+    width: 100%;
+    height: 19vh;
+    background-color: purple;
+}
+.bawah-kotak-blog{
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bks-bawah-kotakblog{
+    width: 90%;
+    height: 13vh;
+}
+.tanggal{
+    width: 100%;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    color: rgb(157, 156, 156);
+}
+.bwh-tanggal{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.utama7{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.kirisec7{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kanansec7{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.dlm-sec7{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bks-sec7{
+    width: 75%;
+    height: 50vh;
+}
+.whatido{
+    width: 100%;
+    height: 10vh;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.bwh-whatido{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.bwhlagiwhat{
+    width: 100%;
+    height: 10vh;
+}
+.say-hello{
+    width: 100%;
+    height: 10vh;
+     display: flex;
+    align-items: end;
+}
+.button-say-hello{
+    width: 20%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+ 
+}
+.kotakgaris3{
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.kotak3nya{
+    width: 100%;
+    height: 18vh;
+    border-radius: 10px;
+    background-color: white;
+}
+.ataskotak3{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+.bwhkotak3{
+    width: 100%;
+    height: 10vh;
+    margin-right: 100px;
+}
+.utama{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body{
+    background: #f8f8f8;
+}
+ 
+.clients{
+    text-align: center;
+    padding: 80px 20px;
+}
+ 
+.clients h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+ 
+.bwh-testi{
+    color: gray;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.bwh-happy{
+    color: gray;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+ 
+.logo-slider{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+ 
+.logo-track{
+    display: flex;
+    gap: 80px;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+ 
+.logo-track span{
+    font-size: 28px;
+    color: #bbb;
+}
+ 
+.bold{
+    color: black;
+    font-weight: bold;
+}
+ 
+.blue{
+    background: #0a66c2;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+ 
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+ 
+.testimonial{
+    text-align: center;
+    padding: 80px 20px;
+}
+ 
+.testimonial h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+ 
+.quote{
+    max-width: 700px;
+    margin: 40px auto;
+    font-size: 18px;
+    color: black;
+}
+ 
+.testimonial h3{
+    margin-top: 20px;
+    font-weight: normal;
+}
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #ccc;
+  border-radius: 50%; 
+  transition: 0.3s;
+}
+ 
+.dot.active {
+  background-color: #333;
+  width: 20px; 
+  border-radius: 10px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+ 
+.contact {
+  padding: 80px 0;
+}
+ 
+.container {
+  width: 85%;
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+ 
+.left, .right {
+  flex: 1;
+}
+ 
+.left h2 {
+  font-size: 28px;
+}
+ 
+.left p {
+  color: #777;
+}
+ 
+.info {
+  margin-top: 30px;
+}
+ 
+.item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+ 
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.label {
+  font-size: 12px;
+  color: #999;
+}
+ 
+.social {
+  margin-top: 30px;
+  
+}
+ 
+.social span {
+  margin-right: 15px;
+  color: purple;
+  cursor: pointer;
+}
+ 
+/* RIGHT FORM */
+.right input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+ 
+.row {
+  display: flex;
+  gap: 20px;
+}
+ 
+button {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+ 
+footer {
+  background: #2f3e50;
+  color: white;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+ 
+.footer-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.logo3 {
+width: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left: -10px;
+}
+ 
+.circle {
+  width: 70px;
+  height: 70px;
+  background: green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.menu a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.logo3 h3{
+    font-size: 35px;
+}
+.atas-kotak-blog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ 
+ 
+.gambar-port img{
+    width: 100%;
+ 
+}
+.gambar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.gambar2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

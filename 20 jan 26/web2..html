@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .atas{
+            width: 100%;
+            height: 10vh;
+            background-color: maroon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+        .tengah{
+            width: 100%;
+            height: 89vh;
+            display: flex;
+            justify-content: center;
+        }
+        .kiri{
+            width: 49%;
+            height: 89vh;
+            display: flex;
+            justify-content: center;
+        }
+        .kanan{
+            width: 49%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+        .teng{
+            width: 90%;
+            height: 89vh;
+        }
+        .smile{
+            width: 100%;
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .camera{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+        .camera video{
+            width: 80%;
+            height: 60vh;
+        }
+        .take{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .take button{
+            width: 18%;
+            height: 6vh;
+            background-color: maroon;
+            border: none;
+            color: white;
+            border-radius: 3px;
+        }
+        .take button:hover{
+            background-color: rgb(220, 6, 6);
+            cursor: pointer;
+        }
+        .tengg{
+            width: 90%;
+            height: 80vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            overflow-x: scroll;
+        }
+        .tenggg{
+            width: 90%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            overflow-x: scroll;
+        }
+        .tenggg::-webkit-scrollbar{
+            display: none;
+        }
+        .foto{
+            width: 100%;
+            height: 80vh;
+            justify-content: space-around;
+            align-items: start;
+            margin-left: 80px;
+        }
+        .tengg::-webkit-scrollbar{
+            display: none;
+        }
+        .foto canvas{
+            width: 100%;
+            height: 80vh;
+            margin-left: 40px;
+        }
+        .hl{
+            width: 2%;
+            height: 90vh;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+            .grs{
+                width: 5%;
+                height: 90vh;
+                background-color: black;
+            }
+
+
+        @media(max-width:667px){
+            .tengah{
+                width: 100%;
+                height: 60vh;
+                flex-wrap: wrap;
+            }
+            .kiri{
+                width: 100%;
+                height: 80vh;
+            }
+            .kanan{
+                width: 100%;
+                height: 120vh;
+                align-items: start;
+            }
+            .take{
+                width: 100%;
+                height: 10vh;
+            }
+            .take button{
+                width: 30%;
+            }
+            .camera{
+                height: 46vh;
+                align-items: center;
+            }
+            .grs{
+                display: none;
+            }
+            .hl{
+                display: none;
+            }
+            .foto{
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="atas">
+        <p>FotoBox</p>
+    </div>
+    <div class="tengah">
+        <div class="kiri">
+            <div class="teng">
+                <div class="smile">
+                    <h3>Smile For The Camera | Cheees</h3>
+                </div>
+                <div class="camera">
+                    <video src="" id="video" autoplay></video>
+                </div>
+                <div class="take">
+                    <button id="snap">Take Foto</button>
+                </div>
+            </div>
+        </div>
+        <div class="hl">
+            <div class="grs">
+
+            </div>
+        </div>
+        <div class="kanan">
+            <div class="tenggg">
+                    <div class="foto" id="photos"><canvas id="canvas" style="display: none;"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const video = document.getElementById('video');
+        const snapButton = document.getElementById('snap');
+        const canvas = document.getElementById('canvas');
+        const photosDiv = document.getElementById('photos');
+        const context = canvas.getContext('2d');
+
+        navigator.mediaDevices.getUserMedia({video : true})
+        .then(stream => {
+            video.srcObject = stream;
+        })
+        .catch(err =>{
+            alert('Tidak bisa akses camera')
+        })
+
+        snapButton.addEventListener('click' ,()=>{
+            context.drawImage(video, 0, 0, canvas.width,canvas.height);
+            const imgData = canvas.toDataURL('image/png')
+            const img = document.createElement('img')
+            img.src = imgData;
+            photosDiv.appendChild(img);
+        });
+        canvas.width = 200;
+        canvas.height = 180;
+    </script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar{
+            width: 100%;
+            height: 10vh;
+            background-color: maroon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bungkus-kiri-kanan{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+        }
+        .kiri{
+            width: 50%;
+            height: 90vh;
+            overflow: scroll;
+        }
+        .kiri::-webkit-scrollbar{
+            display: none;
+        }
+        .kanan{
+            width: 50%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bungkus-quiz{
+            width: 100%;
+            height: 32vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kotak-quiz{
+            width: 90%;
+            height: 30vh;
+            background-color: maroon;
+            box-shadow: 2px 2px 2px 2px gray;
+            border-radius: 10px;
+        }
+        .atas-quiz{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bungkus-atas{
+            width: 90%;
+            height: 6vh;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .bawah-quiz{
+            width: 100%;
+            height: 19vh;
+            display: flex;
+            justify-content: center;
+        }
+        .bungkus-bawah{
+            width: 90%;
+            height: 19vh;
+            color: white;
+            flex-direction: column;
+        }
+        .kotak-nilai{
+            width: 70%;
+            height: 70vh;
+            background-color: maroon;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px 2px gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            font-weight: bold;
+            color: white;
+        }
+        .selesai{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .selesai button{
+            width: 15%;
+            height: 6vh;
+            border: 1px solid maroon;
+            background-color: transparent;
+            border-radius: 10px;
+            margin-left: 32px;
+        }
+        .selesai button:hover{
+            background-color: maroon;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media(max-width:600px){
+            .bungkus-kiri-kanan{
+                width: 100%;
+                height: 180vh;
+                flex-wrap: wrap;
+            }
+            .kiri{
+                width: 100%;
+            }
+            .kanan{
+                width: 100%;
+            }
+            .kotak-nilai{
+                width: 90%;
+            }
+            .selesai button{
+                transform: translate(220%, 90%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2 style="color: white;">Quiz Simple By Wendy</h2>
+    </div>
+    <div class="bungkus-kiri-kanan">
+        <div class="kiri">
+            <div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 1 : Mana yang bukan variable ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal1" value="a">a.let</span><br>
+                            <span><input type="radio" name="soal1" value="b">b.var</span><br>
+                            <span><input type="radio" name="soal1" value="c">c.const</span><br>
+                            <span><input type="radio" name="soal1" value="d">d.conts</span><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 2 : Apa fungsi yang digunakan untuk memanggil id dari html ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal2" value="a">a.document.getElementById</span><br>
+                            <span><input type="radio" name="soal2" value="b">b.document.getElementByClass</span><br>
+                            <span><input type="radio" name="soal2" value="c">c.document.getElementByName</span><br>
+                            <span><input type="radio" name="soal2" value="d">d.document.getElementByTag</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 3 : Apa Kegunaan Dari Javascript ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal3" value="a">a.untuk memberi desain kepada website</span><br>
+                            <span><input type="radio" name="soal3" value="b">b.untuk memberi kerangka pada webite</span><br>
+                            <span><input type="radio" name="soal3" value="c">c.untuk membuat database pada website</span><br>
+                            <span><input type="radio" name="soal3" value="d">d.untuk menjadikan website lebih interaktif</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 4 : apa properti yang dipakai untuk mengubah warna background pada css ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal4" value="a">a.color</span><br>
+                            <span><input type="radio" name="soal4" value="b">b.background-color</span><br>
+                            <span><input type="radio" name="soal4" value="c">c.font-weight</span><br>
+                            <span><input type="radio" name="soal4" value="d">d.font-size</span>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 5 : apa properti yang dipakai untuk mengganti warna teks ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal5" value="a">a.color</span><br>
+                            <span><input type="radio" name="soal5" value="b">b.width</span><br>
+                            <span><input type="radio" name="soal5" value="c">c.height</span><br>
+                            <span><input type="radio" name="soal5" value="d">d.flex-wrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 6 : Apa fungsi yang digunakan untuk memanggil tag dari html ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                            <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal6" value="a">a.document.getElementById</span><br>
+                            <span><input type="radio" name="soal6" value="b">b.document.getElementByClass</span><br>
+                            <span><input type="radio" name="soal6" value="c">c.document.getElementByName</span><br>
+                            <span><input type="radio" name="soal6" value="d">d.document.getElementByTag</span>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 7 : Apa fungsi yang digunakan untuk memanggil class dari html ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal7" value="a">a.document.getElementById</span><br>
+                            <span><input type="radio" name="soal7" value="b">b.document.getElementByClass</span><br>
+                            <span><input type="radio" name="soal7" value="c">c.document.getElementByName</span><br>
+                            <span><input type="radio" name="soal7" value="d">d.document.getElementByTag</span>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 8 : apa properti yang digunakan untuk mengganti model tulisan ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal8" value="a">a.font-family</span><br>
+                            <span><input type="radio" name="soal8" value="b">b.font-size</span><br>
+                            <span><input type="radio" name="soal8" value="c">c.text-decoration</span><br>
+                            <span><input type="radio" name="soal8" value="d">d.font-weight</span>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 9 : Apa kegunaan For loop ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                            <span><input type="radio" name="soal9" value="a">a.untuk melakukan permisalan</span><br>
+                            <span><input type="radio" name="soal9" value="b">b.untuk mendeklerasikan fungsi</span><br>
+                            <span><input type="radio" name="soal9" value="c">c.untuk melakukan perulangan</span><br>
+                            <span><input type="radio" name="soal9" value="d">d.untuk membuat class baru</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bungkus-quiz">
+                <div class="kotak-quiz">
+                    <div class="atas-quiz">
+                        <div class="bungkus-atas">
+                            <p style="color: white;">Soal 10 : tipe input apa yang digunakan untuk membuat kolom cheklist ?</p>
+                        </div>
+                    </div>
+                    <div class="bawah-quiz">
+                        <div class="bungkus-bawah">
+                                <span><input type="radio" name="soal10" value="a">a.search</span><br>
+                                <span><input type="radio" name="soal10" value="b">b.radio</span><br>
+                                <span><input type="radio" name="soal10" value="c">c.Checkbox</span><br>
+                                <span><input type="radio" name="soa110" value="d">d.Tidak semuanya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selesai">
+                <button onclick="cekJawaban()">Selesai</button>
+            </div>
+        </div>
+        <div class="kanan">
+            <div class="kotak-nilai">
+                <span id="hasil"></span>
+            </div>
+        </div>
+    </div>
+    <script>
+    const semuaRadio = document.querySelectorAll('input[type="radio]')
+        semuaRadio.forEach(radio => {
+            radio.addEventListener('change', function() {
+                const namaSoal = this.name;
+                const radioSatuSoal = document.querySelectorAll(`input[name="${namaSoal}"]`)
+            })
+
+            radioSatuSoal.forEach(r => {
+                r.disabled = true;
+                r.parentElement.clasList.add("terkunci");
+            })
+        })
+        function cekJawaban(){
+            let skor = 0;
+
+            const kunci = {
+                soal1 : 'd',
+                soal2 : 'a',
+                soal3 : 'd',
+                soal4 : 'b',
+                soal5 : 'a',
+                soal6 : 'd',
+                soal7 : 'b',
+                soal8 : 'a',
+                soal9 : 'c',
+                soal10 : 'c'
+            }
+
+            for(let nomor in kunci){
+                let jawaban = document.querySelector(`input[name="${nomor}"]:checked`)
+                if(jawaban && jawaban.value === kunci[nomor]){
+                    skor += 10;
+                }
+            }
+            document.getElementById('hasil').innerHTML = skor;
+        }
+    </script>
+</body>
+</html>

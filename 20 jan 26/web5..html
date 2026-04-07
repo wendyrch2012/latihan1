@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .bungkus{
+            width: 100%;
+            height: 97vh;
+            display: flex;
+            justify-content: center;
+        }
+        .kiri{
+            width: 10%;
+            height: 100vh;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .kanan{
+            width: 90%;
+            height: 100vh;
+        }
+        .background-tools{
+            width: 90%;
+            height: 90vh;
+            background-color: rgb(200, 200, 200);
+            border-radius: 20px;
+            box-shadow: 0px 0px 40px gray;
+        }
+        .kotak-tools{
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kotak-tools button{
+            width: 40%;
+            height: 8vh;
+            border-radius: 50px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .kotak-tools button:hover{
+            background-color: black;
+            cursor: pointer;
+            color: white;
+        }
+        .kotak-tools-dua{
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kotak-tools-dua input{
+            height: 25vh;
+            background-color: transparent;
+        }
+
+        @media(max-width:667px){
+            .background-tools{
+                width: 1900%;
+                height: 90vh;
+                transform: translate(100%, 10%);
+            }
+            .background-tools button{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bungkus">
+        <div class="kiri">
+            <div class="background-tools">
+                <div class="kotak-tools">
+                    <button id="increase"> + </button>
+                </div>
+                <div class="kotak-tools">
+                    <span id="size">10</span>
+                </div>
+                <div class="kotak-tools">
+                    <button id="decrease"> - </button>
+                </div>
+                <div class="kotak-tools-dua">
+                    <input type="color" id="color">
+                </div>
+                <div class="kotak-tools">
+                    <button id="clear"> X </button>
+                </div>
+            </div>
+        </div>
+        <div class="kanan">
+            <canvas id="canvas" width="1127" height="585"></canvas>
+        </div>
+    </div>
+    <script>
+        const canvas = document.getElementById("canvas");
+        const increaseBtn = document.getElementById("increase");
+        const decreaseBtn = document.getElementById("decrease");
+        const sizeEl = document.getElementById("size");
+        const colorEl = document.getElementById("color");
+        const clearEl = document.getElementById("clear");
+
+        
+        const ctx = canvas.getContext("2d");
+
+        let size = 10;
+        let isPressed = false;
+        colorEl.value = 'black';
+        let color = colorEl.value;
+        let x;
+        let y;
+
+        canvas.addEventListener('mousedown', (e) =>{
+            isPressed = true;
+            x = e.offsetX;
+            y = e.offsetY;
+        })
+
+        document.addEventListener('mouseup', (e) =>{
+            isPressed = false;
+
+            x = undefined;
+            y = undefined;
+        })
+
+        canvas.addEventListener('mousemove', (e) =>{
+            if(isPressed){
+                const x2 = e.offsetX;
+                const y2 = e.offsetY;
+
+                drawCircle(x2, y2)
+                drawLine(x, y, x2, y2)
+
+                x = x2
+                y = y2
+            }
+        })
+
+        function drawCircle(x, y){
+            ctx.beginPath();
+            ctx.arc(x, y, size, 0, Math.PI * 2)
+            ctx.fillStyle = color
+            ctx.fill()
+        }
+
+        function drawLine(x1, y1, x2, y2){
+            ctx.beginPath()
+            ctx.moveTo(x1, y1)
+            ctx.lineTo(x2, y2)
+            ctx.strokeStyle = color
+            ctx.lineWidth = size * 2
+            ctx.stroke()
+        }
+        function updateSizeOnScreen(){
+            sizeEl.innerText = size
+        }
+        increaseBtn.addEventListener('click', () =>{
+            size += 5
+            if(size > 5){
+                size = 15
+            }
+            updateSizeOnScreen()
+        })
+        decreaseBtn.addEventListener('click', () =>{
+            size -= 5
+            if(size < 5){
+                size = 5
+            }
+            updateSizeOnScreen()
+        })
+        colorEl.addEventListener('change', (e) => color = e.target.value)
+        clearEl.addEventListener('click', () => ctx.clearRect(0,0,canvas.width, canvas.height))
+    </script>
+</body>
+</html>

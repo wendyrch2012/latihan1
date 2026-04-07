@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Pulsa</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .atas{
+            width: 100%;
+            height: 10vh;
+            background-color: maroon;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .bawah{
+            width: 100%;
+            height: 89vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kir{
+            width: 10%;
+            height: 89vh;
+            background-color: maroon;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .kin{
+            width: 95%;
+            height: 89vh;
+        }
+        .masik{
+            width: 100%;
+            height: 6vh;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .bay{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1%;
+            margin-left: 20px;
+        }
+        .bay input{
+            width: 20%;
+            height: 6vh;
+            background-color: rgb(232, 232, 232);
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .byr{
+            width: 8%;
+            height: 6vh;
+            background-color: maroon;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .byr:hover{
+            background-color: rgb(192, 2, 2);
+            cursor: pointer;
+        }
+        .operator{
+            width: 100%;
+            height: 3vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pembayaran{
+            width: 100%;
+            height: 12vh;
+        }
+        .harga-item{
+            width: 10%;
+            height: 10vh;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .harga-item:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .harga-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1%;
+            margin-top: 10px;
+        }
+        .aku{
+            width: 100%;
+            height: 18vh;
+            margin-left: -4px;
+            margin-bottom: 20px;
+        }
+        .att{
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+        }
+        .baww{
+            width: 100%;
+            height: 3vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-left: 5px;
+        }
+        .ling{
+            width: 60%;
+            height: 12vh;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .kirrrr{
+            width: 50%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(55%, 0%);
+        }
+        .kann{
+            width: 50%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .to{
+            width: 90%;
+            height: 10vh;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        @media(max-width:600px){
+            .atas{
+                width: 100%;
+            }
+            .kirrrr{
+                text-align: center;
+                transform: (-2%, 20%);
+            }
+            .to{
+                display: none;
+            }
+            .kir{
+                display: none;
+            }
+            .masik{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translate(-2%, 20%);
+            }
+            .bay{
+                width: 100%;
+                height: 20vh;
+                flex-wrap: wrap;
+                transform: translate(-5%, 0%);
+            }
+            .bay input{
+                width: 100%;
+            }
+            .byr{
+                width: 30%;
+                transform: translate(120%, 0%);
+            }
+            .harga-list{
+                width: 100%;
+                height: 50vh;
+                flex-wrap: wrap;
+            }
+            .harga-item{
+                width: 100%;
+                height: 8vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="atas">
+        <div class="kirrrr">
+            <h2 style="color: white;">TOP UP PULSA BY WENDY</h2>
+        </div>
+        <div class="kann">
+            <div class="to">
+                <p style="color: white;">Sign Out</p>
+            </div>
+        </div>
+    </div>
+    <div class="bawah">
+        <div class="kir">
+            <div class="aku">
+                <div class="att">
+                    <div class="ling">
+
+                    </div>
+                </div>
+                <div class="baww">
+                    <p>Welcome</p>
+                </div>
+            </div>
+        </div>
+        <div class="kin">
+            <div class="masik">
+                <label for="">Masukkan Nomor HP Tujuan :</label>
+            </div>
+            <div class="bay">
+                <input type="number" id="phone">
+                <div class="byr">
+                    <p style="font-size: 18px; color: white;">Bayar</p>
+                </div>
+            </div>
+            <div class="operator">
+                <p>Operator Terdeteksi : </p><div id="operatorInfo"></div>
+            </div>
+            <div class="pembayaran">
+                <div class="harga-list" id="hargaList">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const operatorData = [
+            {
+                name: 'Telkomsel',
+                proFixes: ['0852', '0813', '0821', '0812', '0822'],
+                harga: [5000, 10000, 15000, 25000, 50000, 100000]
+            },
+            {
+                name: 'Indosat',
+                proFixes: ['0855', '0856', '0816', '0815'],
+                harga: [5000, 10000, 15000, 25000, 50000, 100000]
+            },
+            {
+                name: 'Tri',
+                proFixes: ['0897', '0898', '0896', '0895'],
+                harga: [5000, 10000, 15000, 25000, 50000, 100000]
+            },
+        ];
+
+        const phoneInput = document.getElementById('phone');    
+        const operatorInfo = document.getElementById('operatorInfo');
+        const hargaList = document.getElementById('hargaList');
+
+        phoneInput.addEventListener('input', function(){
+            const nomor = phoneInput.value.trim();
+            const prefix = nomor.slice(0, 4);
+
+            let operator = null;
+
+            for (let i = 0; i < operatorData.length; i++){
+                if(operatorData[i].proFixes.includes(prefix)){
+                    operator = operatorData[i];
+                    break;
+                }
+            }
+            
+
+            if(operator){
+                operatorInfo.innerText = operator.name;
+                hargaList.innerHTML = "" + operator.harga.map(h => `<div class="harga-item">Rp ${h.toLocaleString("id-ID")}</div>`).join('')
+            }else{
+                operatorInfo.innerText = ' Tidak Dikenali';
+                hargaList.innerHTML = "";
+            }
+        })
+    </script>
+</body>

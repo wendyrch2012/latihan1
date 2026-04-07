@@ -1,0 +1,578 @@
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ===== NAVBAR ===== */
+  .navbar {
+    height: auto;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .dlm-navbar {
+    width: 90%;
+    height: auto;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .kiri-navbar {
+    width: auto;
+    height: auto;
+  }
+
+  /* Hamburger button — MUNCUL di mobile */
+  .hamburger {
+    display: block;
+    background: purple;
+    color: white;
+    border: none;
+    font-size: 22px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  /* Menu DISEMBUNYIKAN by default */
+  .kanan-navbar {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(221, 220, 220);
+    padding: 6px 0;
+  }
+
+  /* Menu MUNCUL saat .aktif */
+  .kanan-navbar.aktif {
+    display: flex;
+  }
+
+  .home {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .home a {
+    width: 100%;
+    padding: 12px 16px !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    display: block;
+    background-color: transparent !important;
+  }
+
+  /* Khusus link Home tetap ungu */
+  .home a[href="#home"] {
+    background-color: purple !important;
+    color: white !important;
+  }
+
+  .kanan-home {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    padding: 10px 16px;
+  }
+
+  .button {
+    width: auto;
+    height: auto;
+  }
+
+  .button a {
+    display: inline-block;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+  }
+
+  /* ===== SECTION 1 — HERO ===== */
+  .utama {
+    height: auto !important;
+    min-height: unset;
+    overflow: visible;
+  }
+
+  .tengah {
+    flex-direction: column;
+    height: auto !important;
+    padding: 120px 16px 40px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .kiri {
+    order: 1;
+    width: 100%;
+    height: auto !important;
+    justify-content: center;
+    margin: 0 !important;
+  }
+
+  .bks-hello {
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .atas {
+    height: auto;
+    padding: 0;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .dlm-atas {
+    height: auto;
+    width: 100%;
+  }
+
+  .hello, .hello1 {
+    height: auto;
+    padding: 4px 0;
+  }
+
+  .lorem {
+    height: auto;
+    padding: 6px 0;
+  }
+
+  .bawah-lorem {
+    height: auto;
+    padding: 12px 0;
+    align-items: flex-start;
+  }
+
+  .button-bawah {
+    width: 130px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .bawah {
+    height: auto;
+    padding: 16px 0 0 0;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .dlm-bawah {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .bks-bawah {
+    width: 100%;
+    height: auto;
+  }
+
+  .kotak-kecil {
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .kotak1, .kotak2, .kotak3 {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  .atas-kotakkcl,
+  .bawah-kotakkcl {
+    height: auto;
+    padding: 6px 0;
+  }
+
+  .kanan {
+    order: 2;
+    width: 100%;
+    height: auto !important;
+    justify-content: center;
+    margin: 0 !important;
+  }
+
+  .gambar {
+    width: 100%;
+    height: 260px;
+    border-radius: 16px;
+    margin-top: 0;
+  }
+
+  /* ===== SECTION 2 — ABOUT ===== */
+  .utama1 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .kotak-besar {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .kiri-besar, .kanan-besar {
+    width: 100%;
+    height: auto;
+  }
+
+  .gambar2 {
+    width: 80%;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .dlm-besar {
+    height: auto;
+    padding: 20px;
+  }
+
+  .bks-besar {
+    width: 100%;
+    height: auto;
+  }
+
+  .iam, .exp {
+    height: auto;
+    padding: 4px 0;
+  }
+
+  .lorem2, .lorem3 {
+    height: auto;
+    padding: 4px 0;
+  }
+
+  .dlm-buttonlorem {
+    width: 100%;
+    height: auto;
+    gap: 12px;
+  }
+
+  .button-project, .button-sebelah {
+    width: 45%;
+    height: 44px;
+    font-size: 13px;
+  }
+
+  /* ===== SECTION 3 — PROCESS ===== */
+  .utama3 {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .kiri-utama3, .kanan-utama3 {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .bks-work {
+    width: 100%;
+    height: auto;
+  }
+
+  .bks-kotak {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .kiri-4kotak, .kanan-4kotak {
+    width: 100%;
+    height: auto;
+  }
+
+  .bks-kotakkecil, .bks-kotakkecil1,
+  .bks-kotakkecil2, .bks-kotakkecil3 {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .kotakkecil {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  /* ===== SECTION 4 — PORTFOLIO ===== */
+  .utama4 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .dlm-bks-bagian-bawah {
+    width: 80%;
+    height: auto;
+  }
+
+  .bagian-bawah-port {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .dlm-bawah-port {
+    width: 95%;
+    height: auto;
+  }
+
+  .atas-port, .bawah-port {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .kotak-port {
+    width: 90%;
+    height: auto;
+  }
+
+  .gambar-port {
+    height: 120px;
+  }
+
+  .dlm-kotakport {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .dlm-kotakport1 {
+    height: auto;
+  }
+
+  .kode, .product {
+    height: auto;
+    padding: 4px 0;
+  }
+
+  .bwh-product {
+    height: auto;
+    padding: 4px 0;
+  }
+
+  .bwh-loremproduct {
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .dlm-buttonproduct {
+    margin-bottom: 0 !important;
+    width: auto;
+    padding: 0 14px;
+    height: 38px;
+  }
+
+  .bawah-semuakotak {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .dlm-semuakotak {
+    width: auto;
+    padding: 10px 24px;
+    height: auto;
+  }
+
+  /* ===== SECTION 5 — CTA ===== */
+  .utama5 {
+    height: auto !important;
+    padding: 50px 20px;
+  }
+
+  .dohave {
+    height: auto !important;
+  }
+
+  .dlm-dohave {
+    width: 90%;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+
+  .bwh-dohave {
+    height: auto !important;
+    padding: 16px 0;
+  }
+
+  .dlm-bwh-dohave {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+
+  .bwh-dohave2 {
+    height: auto !important;
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bks-dohave2 {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dlm-dohave2 {
+    width: auto;
+    padding: 12px 24px;
+    height: auto;
+  }
+
+  /* ===== SECTION 6 — BLOG ===== */
+  .utama6 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .dlm-bwh-blog {
+    width: 80%;
+    text-align: center;
+    height: auto;
+  }
+
+  .tengah-blog {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .dlm-tengahblog {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+  }
+
+  .kotak-blog {
+    width: 90%;
+    height: auto;
+  }
+
+  .atas-kotak-blog {
+    height: 160px;
+  }
+
+  .bawah-kotak-blog {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  /* ===== SECTION 7 — SERVICES ===== */
+  .utama7 {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .kirisec7, .kanansec7 {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .bks-sec7 {
+    width: 90%;
+    height: auto;
+  }
+
+  .button-say-hello {
+    width: 130px;
+    height: 44px;
+  }
+
+  .kotakgaris3 {
+    width: 95%;
+    height: auto;
+    gap: 15px;
+    padding-bottom: 20px;
+  }
+
+  .kotak3nya {
+    height: auto;
+    padding: 15px;
+  }
+
+  .bwhkotak3 {
+    margin-right: 0;
+    height: auto;
+  }
+
+  /* ===== SECTION 8 — CLIENTS & TESTIMONIAL ===== */
+  .clients h1, .testimonial h1 {
+    font-size: 28px;
+  }
+
+  .quote {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  /* ===== CONTACT ===== */
+  .container {
+    flex-direction: column;
+    width: 90%;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .logo3 {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu a {
+    margin: 5px;
+    display: inline-block;
+  }
+}
+

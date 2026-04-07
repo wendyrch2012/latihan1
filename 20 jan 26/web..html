@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .card{
+            width: 30%;
+            height: 70vh;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 40px mediumslateblue;
+        }
+        .judul{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: mediumslateblue;
+        }
+        .bks-isi{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+        }
+        .isi{
+            width: 90%;
+            height: 50vh;
+        }
+        .atas{
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .atas input{
+            text-align: center;
+            border: 1px solid mediumslateblue;
+        }
+        .bawah{
+            width: 100%;
+            height: 20vh;
+        }
+        .kotak-bawah{
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3%;
+        }
+        .tombol{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+        .tombol button{
+            width: 40%;
+            height: 5vh;
+            background-color: transparent;
+            border: 1px solid mediumslateblue;
+            border-radius: 5px;
+        }
+        .tombol button:hover{
+            cursor: pointer;
+            background-color: mediumslateblue;
+            color: white;
+        }
+
+        @media(max-width:667px){
+            .card{
+                width: 90%;
+                transform: translateY(10%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="judul">
+            <h2>Password Generator</h2>
+        </div>
+        <div class="bks-isi">
+            <div class="isi">
+                <div class="atas">
+                    <label for="">Password Length : </label>
+                </div>
+                <div class="atas">
+                    <input type="number" id="len" value="12" min="6">
+                </div><br>
+                <div class="bawah">
+                    <div class="kotak-bawah">
+                        <label for="">Include Uppercase</label>
+                        <input type="checkbox" id="upper" checked style="transform: translateY(3px);">
+                    </div>
+                    <div class="kotak-bawah">
+                        <label for="">Include Number</label>
+                        <input type="checkbox" id="nums" checked style="transform: translateY(3px);">
+                    </div>
+                    <div class="kotak-bawah">
+                        <label for="">Include Characters</label>
+                        <input type="checkbox" id="special" checked style="transform: translateY(3px);">
+                    </div>
+                </div>
+                <div class="tombol">
+                    <button onclick="generate()">Generate Password</button>
+                    <button onclick="reset()">Reset</button>
+                </div>
+                <div class="tombol">
+                    <div class="output" id="passOut">Your Password Show Here!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function genPass(len, upper, nums, special){
+            const lower = "abcdefghijklmnopqrstuvwxyz";
+            const upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const numChars = "0123456789";
+            const specialChars = "!@#$%^&*()_+\?<>:;[]{}-=";
+            let chars = lower;
+
+            if(upper) chars += upperChars;
+            if(nums) chars += numChars;
+            if(special) chars += specialChars;
+
+            let pass = "";
+            for (let i = 0; i < len; i++){
+                const randInt = Math.floor(Math.random() * chars.length)
+                pass += chars[randInt]
+            }
+            return pass;
+        }
+        function generate(){
+            const len = parseInt(document.getElementById("len").value);
+            const upper = document.getElementById("upper").checked;
+            const nums = document.getElementById("nums").checked;
+            const special = document.getElementById("special").checked;
+
+            const pass = genPass(len, upper, nums, special);
+            document.getElementById("passOut").textContent = pass;
+        }
+        function reset(){
+            document.getElementById("len").value = 12;
+            document.getElementById("upper").checked = true;
+            document.getElementById("nums").checked = true;
+            document.getElementById("special").checked = true;
+            document.getElementById("passOut").textContent = "Your Password Has been reset";
+        }
+    </script>
+</body>
+</html>

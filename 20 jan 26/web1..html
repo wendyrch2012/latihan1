@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .utama{
+            width: 100%;
+            height: 100vh;
+        }
+        .atas{
+            width: 100%;
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bcard{
+            width: 100%;
+            height: 74vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bungkus-card{
+            width: 90%;
+            height: 70vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card{
+            width: 23%;
+            height: 70vh;
+        }
+        .bks-gambar-card{
+            width: 100%;
+            height: 45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gambar-card{
+            width: 100%;
+            height: 38vh;
+            background-color: rgb(197, 197, 197);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gambar-card img{
+            width: 97%;
+            height: 37vh;
+            border-radius: 8px;
+        }
+        .nama-prdk{
+            width: 100%;
+            height: 5vh;
+        }
+        .rating{
+            width: 100%;
+            height: 7vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .harga{
+            width: 100%;
+            height: 7vh;
+            display: flex;
+            justify-content: center;
+        }
+        .harga-kiri{
+            width: 30%;
+            height: 7vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .harga-kanan{
+            width: 70%;
+            height: 7vh;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .modal-card{
+            width: 25%;
+            height: 80vh;
+            background-color: rgb(221, 221, 221);
+            border-radius: 6px;
+            position: fixed;
+            margin-bottom: 180px;
+            display: none;
+        }
+        .bks-gambar-modal{
+            width: 100%;
+            height: 41vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gambar-modal{
+            width: 95%;
+            height: 38vh;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gambar-modal img{
+            width: 97%;
+            height: 37vh;
+            border-radius: 5px;
+        }
+        .tutup{
+            width: 100%;
+            height: 6vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kotak-tutup{
+            width: 30%;
+            height: 5vh;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kotak-tutup span:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            height: 5vh;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bks-kotak-lorem{
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+        }
+        .kotak-lorem{
+            width: 90%;
+            height: 30vh;
+        }
+        .gambar-card:hover{
+            border: 2px solid blue;
+            cursor: pointer;
+        }
+
+        @media(max-width:667px){
+            .bcard{
+                height: 300vh;
+                align-items: start;
+            }
+            .bungkus-card{
+                width: 90%;
+                height: 200vh;
+                flex-wrap: wrap;
+            }
+            .card{
+                width: 100%;
+            }
+            .bks-gambar-card{   
+                width: 100%;
+            }
+            .gambar-card{
+                width: 100%;
+            }
+            .modal-card{
+                width: 90%;
+                position: fixed;
+                top: 0;
+                margin-top: 60px;
+            }
+        }
+
+    </style>
+        <div class="utama">
+            <div class="atas">
+        <h1>Your Mike Olso Like</h1>
+    </div>
+    <div class="bcard">
+        <div class="bungkus-card">
+            <div class="card">
+                <div class="bks-gambar-card">
+                    <div class="gambar-card" id="btn">
+                        <img src="https://asset.tix.id/wp-content/uploads/2025/09/d0545098-3653-48aa-97c5-9effa0587fdf.webp" alt="">
+                    </div>
+                </div>
+                <div class="nama-prdk">
+                    <h3>The Conjuring</h3>
+                </div>
+                <div class="rating">
+                    <h5>⭐⭐⭐⭐⭐</h5>
+                    <h3>40%</h3>
+                </div>
+                <div class="harga">
+                    <div class="harga-kiri">
+                        <h4>$20</h4>
+                        <h5 style="text-decoration: line-through; color: gray;">$150</h5>
+                    </div>
+                    <div class="harga-kanan">
+                        <h3 style="color: red;">-20%</h3>
+                    </div>
+                </div> 
+            </div>  
+             <div class="card">
+                <div class="bks-gambar-card">
+                    <div class="gambar-card" id="btn2">
+                        <img src="https://asset.tix.id/wp-content/uploads/2025/09/1963833488675266560.jpg" alt="">
+                    </div>
+                </div>
+                <div class="nama-prdk">
+                    <h3>Exit 8</h3>
+                </div>
+                <div class="rating">
+                    <h5>⭐⭐⭐⭐⭐</h5>
+                    <h3>40%</h3>
+                </div>
+                <div class="harga">
+                    <div class="harga-kiri">
+                        <h4>$20</h4>
+                        <h5 style="text-decoration: line-through; color: gray;">$150</h5>
+                    </div>
+                    <div class="harga-kanan">
+                        <h3 style="color: red;">-20%</h3>
+                    </div>
+                </div> 
+            </div>  
+             <div class="card">
+                <div class="bks-gambar-card">
+                    <div class="gambar-card" id="btn3">
+                        <img src="https://asset.tix.id/wp-content/uploads/2025/09/1955112567231823872.jpg" alt="">
+                    </div>
+                </div>
+                <div class="nama-prdk">
+                    <h3>The Long Walk</h3>
+                </div>
+                <div class="rating">
+                    <h5>⭐⭐⭐⭐⭐</h5>
+                    <h3>40%</h3>
+                </div>
+                <div class="harga">
+                    <div class="harga-kiri">
+                        <h4>$20</h4>
+                        <h5 style="text-decoration: line-through; color: gray;">$150</h5>
+                    </div>
+                    <div class="harga-kanan">
+                        <h3 style="color: red;">-20%</h3>
+                    </div>
+                </div> 
+            </div>  
+             <div class="card">
+                <div class="bks-gambar-card">
+                    <div class="gambar-card" id="btn4">
+                        <img src="https://asset.tix.id/wp-content/uploads/2025/08/5ee42165-da27-4087-abdc-9076a9b7b6ed.webp" alt="">
+                    </div>
+                </div>
+                <div class="nama-prdk">
+                    <h3>The Shadows Edge</h3>
+                </div>
+                <div class="rating">
+                    <h5>⭐⭐⭐⭐⭐</h5>
+                    <h3>40%</h3>
+                </div>
+                <div class="harga">
+                    <div class="harga-kiri">
+                        <h4>$20</h4>
+                        <h5 style="text-decoration: line-through; color: gray;">$150</h5>
+                    </div>
+                    <div class="harga-kanan">
+                        <h3 style="color: red;">-20%</h3>
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    <div class="modal-card" id="myModal">
+        <div class="bks-gambar-modal">
+            <div class="gambar-modal">
+                <img src="https://asset.tix.id/wp-content/uploads/2025/09/d0545098-3653-48aa-97c5-9effa0587fdf.webp" alt="">
+            </div>
+        </div>
+        <div class="tutup">
+            <div class="kotak-tutup">
+                <span class="close">Close</span>
+            </div>
+        </div>
+        <div class="bks-kotak-lorem">
+            <div class="kotak-lorem">
+                <h3 style="text-align: center; color: white;">Tokoh utama adalah Sari (Karina Icha), wanita dari Banyuwangi yang lelah dengan kehidupan malamnya dan memendam harapan untuk mendapatkan kembali cinta pertamanya, Rendy (Akbar Nasdar)</h3>
+            </div>
+        </div>
+    </div>
+    <div class="modal-card" id="myModal2">
+        <div class="bks-gambar-modal">
+            <div class="gambar-modal">
+                <img src="https://asset.tix.id/wp-content/uploads/2025/09/1963833488675266560.jpg" alt="">
+            </div>
+        </div>
+        <div class="tutup">
+            <div class="kotak-tutup">
+                <span class="close2">Close</span>
+            </div>
+        </div>
+        <div class="bks-kotak-lorem">
+            <div class="kotak-lorem">
+                <h3 style="text-align: center; color: white;">Hanya jika aturan-itu dipatuhi, dia bisa keluar melalui Exit 8. Namun jika sekali pun ia melewatkan sesuatu yang aneh, bahkan satu, ia akan kembali ke titik awal dan harus memulai lagi.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="modal-card" id="myModal3">
+        <div class="bks-gambar-modal">
+            <div class="gambar-modal">
+                <img src="https://asset.tix.id/wp-content/uploads/2025/09/1955112567231823872.jpg" alt="">
+            </div>
+        </div>
+        <div class="tutup">
+            <div class="kotak-tutup">
+                <span class="close3">Close</span>
+            </div>
+        </div>
+        <div class="bks-kotak-lorem">
+            <div class="kotak-lorem">
+                <h3 style="text-align: center; color: white;">Ada kompetisi tahunan yang disebut The Long Walk, di mana para peserta (“Walkers”) harus berjalan dengan kecepatan minimal tertentu—jika melambat, mereka akan dieksekusi.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="modal-card" id="myModal4">
+        <div class="bks-gambar-modal">
+            <div class="gambar-modal">
+                <img src="https://asset.tix.id/wp-content/uploads/2025/08/5ee42165-da27-4087-abdc-9076a9b7b6ed.webp" alt="">
+            </div>
+        </div>
+        <div class="tutup">
+            <div class="kotak-tutup">
+                <span class="close4">Close</span>
+            </div>
+        </div>
+        <div class="bks-kotak-lorem">
+            <div class="kotak-lorem">
+                <h3 style="text-align: center; color: white;">Penjahat utamanya adalah “Shadow” (Tony Leung Ka-fai) yang dulu dikenal sebagai kriminal hebat, dan kejahatan-nya sekarang melibatkan teknologi tinggi dan rencana perampokan maju.</h3>
+            </div>
+        </div>
+    </div>
+    </div>  
+    </div>
+    <script>
+        let modal = document.getElementById('myModal');
+        let modal2 = document.getElementById('myModal2')
+        let modal3 = document.getElementById('myModal3')
+        let modal4 = document.getElementById('myModal4')
+        let btn = document.getElementById('btn');
+        let btn2 = document.getElementById('btn2');
+        let btn3 = document.getElementById('btn3');
+        let btn4 = document.getElementById('btn4');
+        let span = document.getElementsByClassName('close')[0];
+        let span2 = document.getElementsByClassName('close2')[0];
+        let span3 = document.getElementsByClassName('close3')[0];
+        let span4 = document.getElementsByClassName('close4')[0];
+
+        btn.onclick = function (){
+            modal.style.display = "block"
+        }
+        btn2.onclick = function (){
+            modal2.style.display = "block"
+        }
+        btn3.onclick = function (){
+            modal3.style.display = "block"
+        }
+        btn4.onclick = function (){
+            modal4.style.display = "block"
+        }
+        window.onclick = function (event){
+            if(event.target == span){
+                modal.style.display = "none";
+            }else if(event.target == span2){
+                modal2.style.display = "none";
+            }else if(event.target == span3){
+                modal3.style.display = "none";
+            }else if(event.target == span4){
+                modal4.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

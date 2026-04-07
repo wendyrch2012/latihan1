@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="utama">
+        <div class="tengah">
+            <div class="atas">
+                <h2 style="color: red;">TEBAK BERHADIAH</h2>
+                <h4>HADIAH UTAMA : MOBIL</h4>
+            </div>
+            <div class="bawah">
+                <div class="atas1">
+                    <input type="number" id="angka" placeholder="">
+                </div>
+                <div class="bawah1">
+                    <button onclick="tebak()" id="tebak">Tebak</button>
+                </div>
+            </div>
+            <div class="bawah2">
+                <p><span id="hasil"></span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let angka = 4;
+        let komputer = Math.floor(Math.random()*10)+1;
+        function tebak(){
+            let angka = parseFloat (document.getElementById('angka').value);
+             if(komputer === angka){
+                document.getElementById('hasil').innerHTML = 'SELAMAT ANDA MENDAPATKAN HADIAH UTAMA YAITU MOBIL'
+            }else if(angka < komputer){
+                document.getElementById('hasil').innerHTML = 'COBA LAGI'
+             }else{
+                document.getElementById('hasil').innerHTML = 'SELAMAT ANDA MENDAPATKAN UANG TUNAI'
+            }
+        }
+    </script>
+</body>
+</html>

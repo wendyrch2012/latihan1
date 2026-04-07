@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar{
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+    }
+    .utama{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: navy;
+    }
+    .kotak{
+        width: 30%;
+        height: 60vh;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gainsboro;
+    }
+    .inp{
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inp input{
+        width: 60%;
+        text-align: center;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid navy;
+    }
+    .tampilkan{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tampilkan button{
+        width: 30%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: navy;
+        color: white;
+    }
+    .tampilkan button:hover{
+        background-color: rgb(101, 101, 234);
+        cursor: pointer;
+    }
+    .hasil{
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .put{
+        width: 100%;
+        height: 20vh;
+        text-align: center;
+    }
+    #output{
+        overflow: scroll;
+        height: 35vh;
+    }
+    #output::-webkit-scrollbar{
+        display: none;
+    }
+    @media(max-width:667px){
+        .kotak{
+            width: 90%  ;
+        }
+    }
+</style>
+<body>
+    <div class="navbar">
+        
+    </div>
+    <div class="utama">
+        <div class="kotak">
+            <div class="inp">
+             <input type="number" id="numberInput" placeholder="Masukan angka">
+            </div>
+            <div class="tampilkan">
+                <button onclick="tampilkanAngka()">Tampilkan</button>
+            </div>
+            <div class="hasil">
+                <p>Hasil :</p>
+            </div>
+            <div class="put">
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function tampilkanAngka() {
+            let angka = document.getElementById("numberInput").value;
+            let output = document.getElementById("output");
+
+
+            output.innerHTML += ""; 
+
+            output.innerHTML += '<strong>Angka 1 sampai ' + angka + ':</strong><br>';
+            for(let i = 1; i <= angka; i++){
+                output.innerHTML += i + " ";
+            }
+
+            output.innerHTML += "<br><br>"; 
+
+            output.innerHTML += '<strong>Angka Genap 1 sampai ' + angka + ':</strong><br>';
+            for(let i = 1; i <= angka; i++){
+                if(i % 2 === 0){
+                    output.innerHTML += i + " ";
+                }
+            }
+            output.innerHTML += "<br><br>"; 
+
+            output.innerHTML += '<strong>Angka Ganjil 1 Sampai ' + angka + ':</strong><br>';
+            for(let i = 1; i <= angka; i++){
+                if(i % 2 === 1){
+                    output.innerHTML += i + " ";
+                }
+            }
+            output.innerHTML += "<br><br>"; 
+
+            output.innerHTML += '<strong>Angka Kelipatan 3 dari 1 Sampai ' + angka + ':</strong><br>';
+            for(let i = 1; i <= angka; i++){
+                if(i % 3 === 0){
+                    output.innerHTML += i + " ";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
